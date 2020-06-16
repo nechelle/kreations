@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Krishanda's Kreations - Order</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+  <header class="main-header">
+  <h1><img class="logo" src=../images/kks-logo.png></h1>
+  <ul class="nav">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="order.html">Get A Quote</a></li>
+    <li><a href="contact-us.html">Contact Us</a></li>
+  </ul>
+  </header>
+<body>
+  <div class="container">
+  <div class="row">
+  <center><form action="contact.html" method="post">
+    <h2>Order Form</h2>
+    <fieldset>
+    <legend>Client Info:</legend>
+    <span class="number">1</span><br>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="client_name">
+
+    <label for="text">Address:</label>
+    <input type="text" id="text" name="client_addy"><br>
+
+    <label for="tel">Phone#:</label>
+    <input type="tel" id="tel" name="client_tel">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="client_email"><br>
+  </fieldset>
+
+  <fieldset>
+    <input type="radio" id="order_d" value="order_d" name="client_order"><label for="order_d" class="light">Delivery</label>
+    <input type="radio" id="order_p" value="order_p" name="client_order"><label for="order_p" class="light">Pick-Up</label>
+  </fieldset>
+
+  <fieldset>
+    <legend>Options:</legend>
+    <span class="number">2</span><br>
+    <label>Flavor:</label>
+    <select id="flavor" name="cake_flav">
+      <option value="banana">Banana</option>
+      <option value="caramel">Caramel</option>
+      <option value="carrot">Carrot</option>
+      <option value="chocolate">Chocolate</option>
+      <option value="chocolate chip">Chocolate Chip</option>
+      <option value="coconut">Coconut</option>
+      <option value="lemon">Lemon</option>
+      <option value="red velvet">Red Velvet</option>
+      <option value="strawberry">Strawberry</option>
+      <option value="vanilla">Vanilla</option>
+    </select>
+
+    <label>Filling:</label>
+    <select id="filling" name="cake_fill">
+      <option value="chocolate">Chocolate</option>
+      <option value="chocolate pudding">Chocolate Pudding</option>
+      <option value="cream cheese">Cream Cheese</option>
+      <option value="raspberry">Raspberry</option>
+      <option value="salted caramel">Salted Caramel</option>
+      <option value="strawberry">Strawberry</option>
+      <option value="vanilla">Vanilla</option>
+      <option value="vanilla pudding">Vanilla Pudding</option>
+    </select>
+
+    <label>Icing:</label>
+    <select id="icing" name="cake_ice">
+      <option value="chocolate">Chocolate</option>
+      <option value="cream cheese">Cream Cheese</option>
+      <option value="fondant">Fondant</option>
+      <option value="Raspberry">Chocolate</option>
+      <option value="royal icing">Royal Icing</option>
+      <option value="salted caramel">Salted Caramel</option>
+      <option value="strawberry">Strawberry</option>
+      <option value="vanilla">Vanilla</option>
+    </select>
+  </fieldset>
+  <fieldset>
+    <legend>Your Special Touch:</legend>
+    <span class="number">3</span><br>
+    <label for="add">Special Instructions:</label><br>
+    <textarea id="add" name="client_add"></textarea>
+  </fieldset><br><br><br>
+
+    <button type="submit">Place Order</button>
+
+  </form>
+</center>
+</div>
+</div>
+  <footer>&copy 2020 Krishanda's Kreations</footer>
+</body>
+</html>
