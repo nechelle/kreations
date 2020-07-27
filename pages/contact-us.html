@@ -5,8 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Krishanda's Kreations - Contact Us</title>
   <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+<body>
 <header class="main-header">
+  <i class="fa fa-bars fa-2x" onclick="ShowNav();"></i>
   <h1><img class="site-logo" src=../images/kks-logo.png alt="Krishanda's Kreations logo"></h1>
   <ul class="nav">
     <li><a href="../index.html">Home</a></li>
@@ -15,8 +18,8 @@
     <li><a href="contact-us.html">Contact Us</a></li>
   </ul>
 </header>
-<body>
-  <div class="container">
+
+  <div class="contact-container">
   <h2>Contact Form</h2>
   <center><form action="contact-us.html" method="post"></form>
   <fieldset>
@@ -30,12 +33,13 @@
     <input type="email" id="email" name="client_email"><br><br>
     <label for="add">Message*</label><br>
     <textarea id="add" name="client_add"></textarea>
-  </fieldset><br><br><br>
+  </fieldset><br><br>
 
   <button type="submit">Send</button><br><br>
 </form>
 </center>
 </div>
+<script src="../script.js"></script>
   <footer>&copy 2020 Krishanda's Kreations </footer>
 </body>
 </html>
