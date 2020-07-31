@@ -8,7 +8,7 @@ A website for potential clients to view past work and place orders for various b
     -Contact Us Form validates(FR) if name, phone#, email fields are empty or not. 
     
 
-    (FR)= feature requirement
+    (FR)feature requirement
 
     -Some photos used on the site are courtesy of Unsplash.com
     (Photo by Mariusz Słoń-pink cake with balloons; Photo by James Lee-unicorn cakes; Photo by Natalie Chaney-purple cake pops; Photo by Brooke Lark-cupcakes with sprinkles)
