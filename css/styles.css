@@ -5,16 +5,18 @@
     box-sizing: border-box;
 }
 
-i {
-    margin-left: 10px;
-    margin-top: 10px;
-    padding: 5px;
-    border: 1px solid gray;
-    color: gray;
-    border-radius: 10%;
-    position: absolute;
-    
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    margin: 0;
 }
+
+p {
+    font-size: 1.05em;
+    margin-bottom: 1.8em;
+} 
+
+/*==Header Styles===*/
 .site-logo {
     width: 200px;
     height: 150px;
@@ -27,31 +29,43 @@ h1 {
 header {
     background: #55bcce;   
 }
+    /*hamburger menu and navigation*/
+i {
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px solid gray;
+    color: gray;
+    border-radius: 10%;
+    position: absolute;   
+}
 
 .main-header,
-.nav {
+.navigation {
     display: flex;
     flex-direction: column;
 }
 
-.nav a {
+.navigation a {
     display: block;
     color: #797e83;
-    font-size: 1.125em;
+    font-size: 1.25em;
     font-weight: 300;
     text-align: center;
     padding: .4em;
-    border-bottom: 1px solid #ebecec;  
+    border-bottom: 1px solid #ebecec; 
 }
 
-.nav a:hover {
+.navigation a:hover {
     color: #0b0b0b;
     border-bottom-color: red;
 }
-.nav,
+
+.navigation,
 .centered {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
 ul,
 li {
     margin: 0;
@@ -64,24 +78,16 @@ li {
     display: none;
 }
 
-a:link {
+/*a:link {
     text-decoration: none;
-}
+}*/
 
-.gall {
-    width: 200px;
-    height: 200px;
-    padding: 10px 10px;
-    border: 2px dotted #dd4124;
-    margin: 5px;
-}
-
+    /*head picture*/
 .head-pic {
-    width: 100%;
-    height: auto;
     opacity: 80%;
+    max-width: 100%;
 }
-/*text over image*/
+    /*text over image*/
 .main-pic {
     position: relative;
     text-align: center;
@@ -93,11 +99,35 @@ a:link {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 1.5em;
+    padding-top: 30px;
 }
-/*text over image end above*/
-footer {
+.first {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+}
+.gall {
+    width: 200px;
+    height: 220px;
+    padding: 10px 10px;
+    border: 2px dotted #dd4124;
+    margin: 5px;
+}
+.home-pic {
+    width: 300px;
+    height: 250px;
+    border: 2px dotted red;
+    padding: 5px;
+}
+.container {
+    width: 75%;
+    align-self: center;
+}
+/*==Footer Styles==*/
+.main-footer{
     text-align: center;
     background-color: #55bcce;
+    padding: 10px;
 }
 
 /*sticky footer */
@@ -105,7 +135,7 @@ footer {
 .container-1 {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    flex-wrap: wrap;
     
 }
 .container-2 {
@@ -118,96 +148,120 @@ footer {
 
 .col {
     color: gray;
+    padding: 1em;
+   
 }
+/*==============
+   Forms
+  ==============*/
 
-.contact-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+#contact {
+    text-align:center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    *text-decoration: underline;
 }
-/* ==============
-    Order Form
-   ==============*/ 
-.container {
-    padding: 15px;
-    font-size: 1.5em;
-}   
-form {
-    display: inline-block;
-    background-color: #dd4124;
-    /*text-align: left;*/
+.cont-img {
+    width: 75%;
+    height: 50%;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
-
-fieldset {
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-}
-
-.number {
-    font-weight: bolder;
-}
-
+ 
 button {
     background-color: #55bcce;
     font-size: 1.2em;
     cursor: pointer;
 }
 
-textarea {
+#add {
     height: 150px;
 }
+
+.well {
+    background-color: red;
+}
+
+
 /* ==============
     Media Queries
    ============== */   
 
    @media (min-width: 768px) {
+       /*Heading*/
        i {
            visibility: hidden;
        }
-       
        li {
         padding: 5px;
         display: block;
     }
-        .col {
-          padding: 10px; 
+
+    .head-pic {
+        width: 100%;
+        height: 75vh;
+    }
+    .navigation {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .navigation a {
+        border-bottom-color: transparent;
+    }
+
+    /*Content*/
+       .col {
+          padding-right: 1em;
+          padding-left: 1em; 
+          flex: 1 50%;
+       }
+    /*Contact Form*/
+        .meme {
+            width: 50%;   
+        }
+
+       .contact {
+           display: flex;
+           flex-direction: row;
+           flex-wrap: wrap;
+       }
        
+        .cont-img {
+            width: 50%;
+            padding-left: 30px;
+            height: 50%;
+            padding-top: 150px;
+            padding-right: 10px;
+        }
+       /*Order Form*/
+       .emem {
+           width: 75%;
+           align-self: center;
+       }
+       #order {
+           text-align: center;
        }
         .container-1 {
             flex-direction: row;
+            flex-wrap: wrap;
         }
-
-        .head-pic {
-            width: 100%;
-            height: 75vh;
-        }
-        .nav {
-            flex-direction: row;
-            justify-content: space-around;
-        }
-
-        .nav a {
-            border-bottom-color: transparent;
-        }
-
-        .contact-container {
-            width: 50vw;
-            text-align: center;
+        .sec {
+            order: -1;
         }
     }
 
    @media (min-width: 1025px) {
 
         .main-header,
-        .nav {
-            display: flex;
+        .navigation {
             flex-direction: row;
             justify-content: space-between;  
         }
        
-        .nav {
-           margin-top: 100px;
-           margin-right: 20px;
+        .navigation {
+          margin-top: 50px;
+          margin-right: 20px;
        }
     
        .site-logo {
@@ -217,69 +271,13 @@ textarea {
            height: 100px;
        }
 
-       .third {
-           order: -1;
+       .col {
+           flex-basis: 0;
        }
-   }
 
-   /*+++ Style inputs, select elements and textareas */
-   input[type=text], select, textarea {
-       width: 100%;
-       padding: 12px;
-       border: 1px solid #ccc;
-       border-radius: 4px;
-       box-sizing: border-box;
-       resize: vertical;
-   }
-
-   /*++++ Style the label to display next to the inputs*/
-   label {
-       padding: 12px 12px 12px 0;
-       display: inline-block;
-   }
-
-   /** Style the submit button*/
-   input[type=submit] {
-       background-color: #4CAF50;
-       color: white;
-       padding: 12px 20px;
-       border: none;
-       border-radius: 4px;
-       cursor: pointer;
-       float: right;
-   }
-    /* Style the container*/
-    
-   .container {
-       border-radius: 5px;
-       background-color: red;
-       padding: 20px;
-   }
-   /*Floating column for labels */
-   .col-info {
-       float: left;
-       width: 25%;
-       margin-top: 6px;
-   }
-   /*Floating column for inputs*/
-   .col-input {
-       float: left;
-       width: 75%;
-       margin-top: 6px;
-   }
-
-   /*clear floats after the columns */
-   .row:after {
-       content: "";
-       display: table;
-       clear: both;
-   }
-
-   @media screen and (max-width: 600px) {
-       .col-info, 
-       .col-input,
-       input[type=submit] {
-           width: 100%;
-           margin-top: 0;
+       .first,
+       .sec,
+       .third {
+           flex-grow: 2;
        }
    }

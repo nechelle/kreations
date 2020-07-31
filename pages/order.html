@@ -5,102 +5,103 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Krishanda's Kreations - Order</title>
   <link rel="stylesheet" href="../css/styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--Font Awesome for Bars icon-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"><!--Bootstrap CDN-->
 </head>
 <body>
   <header class="main-header">
     <i class="fa fa-bars fa-2x" onclick="ShowNav();"></i>
-  <h1><img class="site-logo" src=../images/kks-logo.png alt="Krishanda's Kreations logo"></h1>
-  <ul class="nav">
+    <h1><a href="../index.html"><img class="site-logo" src=../images/kks-logo.png alt="Krishanda's Kreations logo"></a></h1>  
+
+  <ul class="navigation">
     <li><a href="../index.html">Home</a></li>
     <li><a href="gallery.html">Gallery</a></li>
     <li><a href="order.html">Get A Quote</a></li>
     <li><a href="contact-us.html">Contact Us</a></li>
   </ul>
   </header>
+  
+<div class="container">
+  <h2 id="order">Order Form</h2>
+  <div class="row well emem">
+<form class="form-horizontal" action="contact.html" method="post">
+  <legend>Client Info:</legend>
+  <div class="form-group">
+  <div class="col-info">
+  <label for="name" class="control-label">Name:</label></div>
+  <div class="col-input"><input type="text" id="name" name="client_name" class="form-control" placeholder="Enter First and Last Name"></div><br>
+  <div class="col-info">  
+  <label for="text" class="control-label">Address:</label></div>
+  <div class="col-input"><input type="text" id="text" name="client_addy" class="form-control" placeholder="Enter Street Address"></div><br>
+  <div class="col-info">
+  <label for="tel" class="control-label">Phone#:</label></div>
+  <div class="col-input"><input type="tel" id="tel" name="client_tel" class="form-control" placeholder="xxx-xxx-xxxx"></div><br>
+  <div class="col-info">
+  <label for="email" class="control-label">Email:</label></div>
+  <div class="col-input"><input type="email" id="email" name="client_email" class="form-control" placeholder="you@you.com"></div><br>
+  </div>
 
-  <div class="container">
-  <center><form action="contact.html" method="post"></form>  
-  <div class="row">
-    <h2>Order Form</h2>
-    <fieldset>
-    <legend>Client Info:</legend>
-    <span class="number">1</span><br>
-    <div class="col-info">
-    <label for="name">Name:</label></div>
-    <div class="col-input"><input type="text" id="name" name="client_name"></div>
+  <legend>Options:</legend>
+  <div class="form-group">
+  <label for="order_d"><input type="radio" id="order_d" value="order_d" name="client_order" class= "form-control">Delivery  </label><br>
+  <label for="order_p"><input type="radio" id="order_p" value="order_p" name="client_order" class="form-control">Pick-Up</label><br><br>
+  </div>
 
-    <div class="col-info">  
-    <label for="text">Address:</label></div>
-    <div class="col-input"><input type="text" id="text" name="client_addy"></div>
-    <div class="col-info">
-    <label for="tel">Phone#:</label></div>
-    <div class="col-input"><input type="tel" id="tel" name="client_tel"></div>
-    <div class="col-info">
-    <label for="email">Email:</label></div>
-    <div class="col-input"><input type="email" id="email" name="client_email"></div>
-  </fieldset>
+  
+  <div class="form-group">
+  <div class="col-info"><label for="flavor">Flavor:</label>
+  <select class="form-control" id="flavor" name="cake_flav">
+    <option value="banana">Banana</option>
+    <option value="caramel">Caramel</option>
+    <option value="carrot">Carrot</option>
+    <option value="chocolate">Chocolate</option>
+    <option value="chocolate chip">Chocolate Chip</option>
+    <option value="coconut">Coconut</option>
+    <option value="lemon">Lemon</option>
+    <option value="red velvet">Red Velvet</option>
+    <option value="strawberry">Strawberry</option>
+    <option value="vanilla">Vanilla</option>
+  </select></div><br>
 
-  <fieldset>
-    <input type="radio" id="order_d" value="order_d" name="client_order"><label for="order_d" class="light">Delivery</label>
-    <input type="radio" id="order_p" value="order_p" name="client_order"><label for="order_p" class="light">Pick-Up</label>
-  </fieldset>
+  <div class="col-info"><label for="filling">Filling:</label>
+  <select class="form-control" id="filling" name="cake_fill">
+    <option value="chocolate">Chocolate</option>
+    <option value="chocolate pudding">Chocolate Pudding</option>
+    <option value="cream cheese">Cream Cheese</option>
+    <option value="raspberry">Raspberry</option>
+    <option value="salted caramel">Salted Caramel</option>
+    <option value="strawberry">Strawberry</option>
+    <option value="vanilla">Vanilla</option>
+    <option value="vanilla pudding">Vanilla Pudding</option>
+  </select></div><br>
+  
+  <div class="col-info"><label for="icing">Icing:</label>
+  <select class="form-control" id="icing" name="cake_ice">
+    <option value="chocolate">Chocolate</option>
+    <option value="cream cheese">Cream Cheese</option>
+    <option value="fondant">Fondant</option>
+    <option value="Raspberry">Chocolate</option>
+    <option value="royal icing">Royal Icing</option>
+    <option value="salted caramel">Salted Caramel</option>
+    <option value="strawberry">Strawberry</option>
+    <option value="vanilla">Vanilla</option>
+  </select></div>
+  </div>
 
-  <fieldset>
-    <legend>Options:</legend>
-    <span class="number">2</span><br>
-    <div class="col-info"><label>Flavor:</label></div>
-    <div class="col-input"><select id="flavor" name="cake_flav">
-      <option value="banana">Banana</option>
-      <option value="caramel">Caramel</option>
-      <option value="carrot">Carrot</option>
-      <option value="chocolate">Chocolate</option>
-      <option value="chocolate chip">Chocolate Chip</option>
-      <option value="coconut">Coconut</option>
-      <option value="lemon">Lemon</option>
-      <option value="red velvet">Red Velvet</option>
-      <option value="strawberry">Strawberry</option>
-      <option value="vanilla">Vanilla</option>
-    </select></div>
+<div class="form-group">
+  <legend>Your Special Touch:</legend>
+  <div class="col-info"><label for="add">Special Instructions:</label></div><br>
+  <div class="col-input"><textarea id="add" name="client_add" class="form-control" placeholder="Customize your order..."></textarea></div>
+</div>
 
-    <div class="col-info"><label>Filling:</label></div>
-    <div class="col-input"><select id="filling" name="cake_fill">
-      <option value="chocolate">Chocolate</option>
-      <option value="chocolate pudding">Chocolate Pudding</option>
-      <option value="cream cheese">Cream Cheese</option>
-      <option value="raspberry">Raspberry</option>
-      <option value="salted caramel">Salted Caramel</option>
-      <option value="strawberry">Strawberry</option>
-      <option value="vanilla">Vanilla</option>
-      <option value="vanilla pudding">Vanilla Pudding</option>
-    </select></div>
+  <button type="submit" class="btn">Place Order</button>
+</form>
 
-    <div class="col-info"><label>Icing:</label></div>
-    <div class="col-input"><select id="icing" name="cake_ice">
-      <option value="chocolate">Chocolate</option>
-      <option value="cream cheese">Cream Cheese</option>
-      <option value="fondant">Fondant</option>
-      <option value="Raspberry">Chocolate</option>
-      <option value="royal icing">Royal Icing</option>
-      <option value="salted caramel">Salted Caramel</option>
-      <option value="strawberry">Strawberry</option>
-      <option value="vanilla">Vanilla</option>
-    </select></div>
-  </fieldset>
-  <fieldset>
-    <legend>Your Special Touch:</legend>
-    <span class="number">3</span><br>
-    <div class="col-info"><label for="add">Special Instructions:</label></div><br>
-    <div class="col-input"><textarea id="add" name="client_add"></textarea></div>
-  </fieldset><br><br><br>
-
-    <button type="submit">Place Order</button>
-
-  </form>
-</center>
 </div>
 </div>
 <script src="../script.js"></script>
-  <footer>&copy 2020 Krishanda's Kreations</footer>
+<footer class="main-footer">
+  <span>&copy 2020 Krishanda's Kreations</span></footer>
+  
 </body>
 </html>
