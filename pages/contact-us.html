@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Krishanda's Kreations - Contact Us</title>
-  <link rel="stylesheet" href="../css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--Font Awesome for Bars icon-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"><!--Bootstrap CDN-->
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
 <header class="main-header">
@@ -19,8 +19,9 @@
     <li><a href="order.html">Get A Quote</a></li>
     <li><a href="contact-us.html">Contact Us</a></li>
   </ul>
-</header>
-<div class="contact-container">
+</header><!--main-header-->
+
+<div class="contact-container"><!--contact form-->
   <h2 id="contact">Contact Form</h2>
   <div class="container contact">
     <div class="row well meme">
@@ -28,7 +29,7 @@
   <div class="form-group">
     <div class="col-info">
       <label for="name" class="control-label">Name:</label></div>
-      <div class="col-input"><input type="text" id="name" name="client_name" class="form-control" placeholder="Enter First and Last Name"></div><br>
+      <div class="col-input"><input type="text" id="name" name="client_name" class="form-control" placeholder="Enter Name"></div><br>
     <div class="col-info">
       <label for="tel" class="control-label">Phone#:</label></div>
       <div class="col-input"><input type="tel" id="tel" name="client_tel" class="form-control" placeholder="xxx-xxx-xxxx"></div><br>
@@ -42,13 +43,14 @@
   </div>
     <div class="col-input"><textarea id="add" name="client_add" class="form-control" placeholder="What's on your mind?"></textarea></div><br>
 
-<button type="submit" class="btn">Send</button>
+<button type="button" onclick="contactFieldEmpty();" class="btn">Send</button><!--button button-->
 </div> 
 </form>
 <img class="cont-img" src=../images/natalie-chaney.jpg alt="cake pops and cupcakes">
 </div>
 </div>
-<script src="../script.js"></script>
+<script src="../javascript/script.js"></script><!--hamburger menu-->
+<script src="../javascript/contact.js"></script><!--send form-->
 <br>
 <footer class="main-footer">
   <span>&copy 2020 Krishanda's Kreations</span></footer>

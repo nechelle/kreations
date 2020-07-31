@@ -78,9 +78,9 @@ li {
     display: none;
 }
 
-/*a:link {
+a:link {
     text-decoration: none;
-}*/
+}
 
     /*head picture*/
 .head-pic {
@@ -101,27 +101,52 @@ li {
     font-size: 1.5em;
     padding-top: 30px;
 }
+/*Content*/
 .first {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap; 
 }
-.gall {
-    width: 200px;
-    height: 220px;
-    padding: 10px 10px;
-    border: 2px dotted #dd4124;
-    margin: 5px;
+
+.col h2 {
+    text-align: center;
 }
-.home-pic {
+.home-pic,
+.home-pic2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 300px;
     height: 250px;
     border: 2px dotted red;
     padding: 5px;
 }
+
 .container {
     width: 75%;
     align-self: center;
+}
+/*gallery*/
+.container-2 {
+    display:flex;
+    flex-direction: column;
+    /*min-height: 100vh;*/
+    /*flex-wrap: wrap;*/
+}
+.gall {
+    width: 75%;
+    height: 5%;
+    padding: 10px 10px;
+    border: 2px dotted #dd4124;
+    margin: 5px;
+    display: block;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.col {
+    color: gray;
+    padding: 1.5em;
 }
 /*==Footer Styles==*/
 .main-footer{
@@ -138,19 +163,7 @@ li {
     flex-wrap: wrap;
     
 }
-.container-2 {
-    display:flex;
-    flex-direction: row;
-    min-height: 100vh;
-    flex-wrap: wrap;
-    justify-content: center;
-}
 
-.col {
-    color: gray;
-    padding: 1em;
-   
-}
 /*==============
    Forms
   ==============*/
@@ -180,15 +193,14 @@ button {
 }
 
 .well {
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.603);
 }
-
 
 /* ==============
     Media Queries
    ============== */   
 
-   @media (min-width: 768px) {
+   @media (min-width: 765px) {
        /*Heading*/
        i {
            visibility: hidden;
@@ -216,6 +228,20 @@ button {
           padding-left: 1em; 
           flex: 1 50%;
        }
+       .gall {
+        width: 300px;
+        height: 320px;
+        padding: 20px 20px;
+        border: 2px dotted #dd4124;
+        margin: 20px;
+        display: inline-block;
+    }
+    .container-2 {
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
     /*Contact Form*/
         .meme {
             width: 50%;   
@@ -247,7 +273,7 @@ button {
             flex-wrap: wrap;
         }
         .sec {
-            order: -1;
+            order: -2;
         }
     }
 
@@ -270,14 +296,25 @@ button {
            width: 150px;
            height: 100px;
        }
+       .home-pic,
+       .home-pic2 {
+            width: 400px;
+            height: 350px;
+            border: 2px dotted red;
+            padding: 5px;
+       }
 
        .col {
            flex-basis: 0;
        }
 
        .first,
-       .sec,
-       .third {
+       .sec {
            flex-grow: 2;
        }
+
+       .third {
+           order: -1;
+       }
+
    }

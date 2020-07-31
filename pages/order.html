@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Krishanda's Kreations - Order</title>
-  <link rel="stylesheet" href="../css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--Font Awesome for Bars icon-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"><!--Bootstrap CDN-->
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
   <header class="main-header">
@@ -19,12 +19,12 @@
     <li><a href="order.html">Get A Quote</a></li>
     <li><a href="contact-us.html">Contact Us</a></li>
   </ul>
-  </header>
+  </header><!--main-header-->
   
 <div class="container">
   <h2 id="order">Order Form</h2>
   <div class="row well emem">
-<form class="form-horizontal" action="contact.html" method="post">
+<form class="form-horizontal" action="order.html" method="post"><!--order form-->
   <legend>Client Info:</legend>
   <div class="form-group">
   <div class="col-info">
@@ -94,12 +94,12 @@
   <div class="col-input"><textarea id="add" name="client_add" class="form-control" placeholder="Customize your order..."></textarea></div>
 </div>
 
-  <button type="submit" class="btn">Place Order</button>
-</form>
+  <button type="submit" id="submit" value="Submit" class="btn">Place Order</button>
+</form><!--submit button-->
 
 </div>
 </div>
-<script src="../script.js"></script>
+<script src="../javascript/script.js"></script><!--hamburger menu-->
 <footer class="main-footer">
   <span>&copy 2020 Krishanda's Kreations</span></footer>
   
