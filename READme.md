@@ -8,7 +8,6 @@ A website for potential clients to view past work and place orders for various b
     -Contact Us Form validates(FR) if name, phone#, email fields are empty or not. 
     
 
-    *
     (FR)= feature requirement
 
     -Some photos used on the site are courtesy of Unsplash.com
